@@ -7,7 +7,6 @@ function makeNumberArray(input) {
 }
 
 function mrRobogerTranslator(number) {
-<<<<<<< HEAD
   let n = number.toString();
   const triggerArray = ["3", "2", "1"];
   const triggerTranslation = ["Won't you be my neighbor?", "Boop!", "Beep!"];
@@ -44,9 +43,7 @@ function mrRobogerTranslator(number) {
 //   }
 //   return output;
 // }
-=======
   if (number === 0) {
     return 0;
   }
 }
->>>>>>> 60b559a (Pass second test, mrRogoberTranslator() returns expected behavior)
