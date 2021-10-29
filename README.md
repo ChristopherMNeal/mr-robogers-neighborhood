@@ -79,3 +79,10 @@ Expected Output: "0"
 Test: "It should return "" if no number is inputted."
 Code: mrRobogerTranslator(); 
 Expected Output: ""
+
+
+Describe: mrRoboger()
+
+Test: "It should return 0 if the string "0" is inputted." 
+Code: mrRoboger("0");
+Expected Output: "0"
