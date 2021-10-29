@@ -7,7 +7,9 @@ function makeNumberArray(input) {
 }
 
 function mrRobogerTranslator(number) {
-  if (number === 0) {
-    return 0;
+  if (number === 1) {
+    return "Beep!";
+  } else {
+    return number;
   }
 }
