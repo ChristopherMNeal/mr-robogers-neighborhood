@@ -1,8 +1,8 @@
 function makeNumberArray(input) {
   let numberArray = [];
   roundInput = Math.round(input);
-  if (roundInput === "" || roundInput < 0) {
-    numberArray.push(-1);
+  if (input === "" || input < 0) {
+    numberArray = "-1";
   } else {
     for (let i = 0; i <= roundInput; i++) {
       numberArray.push(i);
@@ -61,6 +61,8 @@ $(document).ready(function() {
     const number = $("input#number").val();
     if (number > 2000) {
       $("#too-big").slideDown();
+    } else if (makeNumberArray(number) === "-1") {
+      $("#positive-integer").slideDown();
     } else {
       $("#results-p").text(mrRoboger(number));
       $("#number-form").slideToggle();
