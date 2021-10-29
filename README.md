@@ -83,6 +83,6 @@ Expected Output: ""
 
 Describe: mrRoboger()
 
-Test: "It should return 0 if the string "0" is inputted." 
-Code: mrRoboger("0");
-Expected Output: "0"
+Test: "It should return mrRobogerTranslator() and makeNumberArray() on the inputted number and return the results as a string." 
+Code: mrRoboger(5);
+Expected Output: "0 Beep! Boop! Won't you be my neighbor? 4 5"
