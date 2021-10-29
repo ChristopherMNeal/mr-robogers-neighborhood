@@ -86,3 +86,7 @@ Describe: mrRoboger()
 Test: "It should return mrRobogerTranslator() and makeNumberArray() on the inputted number and return the results as a string." 
 Code: mrRoboger(5);
 Expected Output: "0 Beep! Boop! Won't you be my neighbor? 4 5"
+
+Test: "It should return an empty string if no number is inputted"
+Code: mrRoboger();
+Expected Output: ""
