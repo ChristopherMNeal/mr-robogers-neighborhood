@@ -38,24 +38,21 @@ function mrRoboger(input) {
   let resultsArray = [];
   const numberArray = makeNumberArray(input);
   let division = 0;
-  if (input >= 400) {
-    division = Math.floor(numberArray.length / 4);
-    for (let i = 0; i < division; i++) {
-      resultsArray.push("<div class='big'>" + mrRobogerTranslator(numberArray[i]) + "</div>");
-    }
-    for (let i = division; i < division*2; i++) {
-      resultsArray.push("<div class='reg'>" + mrRobogerTranslator(numberArray[i]) + "</div>");
-    }
-    for (let i = division*2; i < division*3; i++) {
-      resultsArray.push("<div class='small'>" + mrRobogerTranslator(numberArray[i]) + "</div>");
-    }
-    for (let i = division*3; i < numberArray.length; i++) {
-      resultsArray.push("<div class='smaller'>" + mrRobogerTranslator(numberArray[i]) + "</div>");
-    }
-  } else {
-    for (let i = 0; i < numberArray.length; i++) {
-    resultsArray.push(mrRobogerTranslator(numberArray[i]));
-    }
+  division = Math.floor(numberArray.length / 5);
+  for (let i = 0; i < division; i++) {
+    resultsArray.push("<span class='big'>" + mrRobogerTranslator(numberArray[i]) + "</span>");
+  }
+  for (let i = division; i < division*2; i++) {
+    resultsArray.push("<span class='reg'>" + mrRobogerTranslator(numberArray[i]) + "</span>");
+  }
+  for (let i = division*2; i < division*3; i++) {
+    resultsArray.push("<span class='small'>" + mrRobogerTranslator(numberArray[i]) + "</span>");
+  }
+  for (let i = division*3; i < division*4; i++) {
+    resultsArray.push("<span class='smaller'>" + mrRobogerTranslator(numberArray[i]) + "</span>");
+  }
+  for (let i = division*4; i < numberArray.length; i++) {
+    resultsArray.push("<span class='smallest'>" + mrRobogerTranslator(numberArray[i]) + "</span>");
   }
   return resultsArray.join(" ");
 }
