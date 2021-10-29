@@ -57,3 +57,7 @@ Expected Output: "Beep!"
 Test: "It should return 'Boop!' if the number 2 is inputted."
 Code: mrRobogerTranslator(2); 
 Expected Output: "Boop!"
+
+Test: "It should return 'Won't you be my neighbor?' if the number 3 is inputted."
+Code: mrRobogerTranslator(3); 
+Expected Output: "Won't you be my neighbor?"
