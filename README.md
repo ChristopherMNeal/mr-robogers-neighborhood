@@ -37,12 +37,16 @@ Copyright (c) _29 October 2021_ _Christopher Neal_
 Describe: makeNumberArray()
 
 Test: "It should return an array with a 0 if the number 0 is inputted."
-Code: makeNumberString(0);
+Code: makeNumberArray(0);
 Expected Output: [0]
 
 Test: "It should return an array with numbers counting up from 0 to the number that is inputted."
-Code: makeNumberString(5);
+Code: makeNumberArray(5);
 Expected Output: [0, 1, 2, 3, 4, 5]
+
+Test: "It should return '-1' if an empty string is inputted."
+Code: makeNumberArray("");
+Expected Output: "[-1]"
 
 Describe: mrRobogerTranslator()
 
