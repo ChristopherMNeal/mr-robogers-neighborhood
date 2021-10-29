@@ -28,3 +28,11 @@ function mrRobogerTranslator(numberInput) {
   return output;
 }
 
+function mrRoboger(input) {
+  let resultsArray = [];
+  const numberArray = makeNumberArray(input);
+  for (let i = 0; i < numberArray.length; i++) {
+    resultsArray.push(mrRobogerTranslator(numberArray[i]));
+  }
+  return resultsArray.join(" ");
+}
