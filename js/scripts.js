@@ -61,8 +61,10 @@ $(document).ready(function() {
     const number = $("input#number").val();
     if (number > 2000) {
       $("#too-big").slideDown();
+      $("#positive-integer").hide();
     } else if (makeNumberArray(number) === "-1") {
       $("#positive-integer").slideDown();
+      $("#too-big").hide();
     } else {
       $("#results-p").text(mrRoboger(number));
       $("#number-form").slideToggle();
