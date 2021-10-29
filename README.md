@@ -53,3 +53,7 @@ Expected Output: "0"
 Test: "It should return 'Beep!' if the number 1 is inputted."
 Code: mrRobogerTranslator(1); 
 Expected Output: "Beep!"
+
+Test: "It should return 'Boop!' if the number 2 is inputted."
+Code: mrRobogerTranslator(2); 
+Expected Output: "Boop!"
