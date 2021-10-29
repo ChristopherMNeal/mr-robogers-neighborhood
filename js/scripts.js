@@ -49,7 +49,7 @@ $(document).ready(function() {
     event.preventDefault();
     name = $("input#name").val();
     if (!name) {
-      $("#no-name").show();
+      $("#no-name").slideDown();
     } else {
       $("#name-form").slideToggle();
       $("#number-form").delay(800).slideToggle();
@@ -59,9 +59,13 @@ $(document).ready(function() {
   $("#number-form").submit(function(event) {
     event.preventDefault();
     const number = $("input#number").val();
-    $("#results-p").text(mrRoboger(number));
-    $("#number-form").slideToggle();
-    $("#results").delay(800).slideToggle();
+    if (number > 2000) {
+      $("#too-big").slideDown();
+    } else {
+      $("#results-p").text(mrRoboger(number));
+      $("#number-form").slideToggle();
+      $("#results").delay(800).slideToggle();
+    }
     $("#reset").click(function() {
       location.reload();
     });
