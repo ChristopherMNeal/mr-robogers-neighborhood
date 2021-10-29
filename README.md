@@ -48,6 +48,10 @@ Test: "It should return '-1' if an empty string is inputted."
 Code: makeNumberArray("");
 Expected Output: "[-1]"
 
+Test: "It should return '-1' if a negative number is inputted"
+Code: makeNumberArray(-1);
+Expected Output: "[-1]"
+
 Describe: mrRobogerTranslator()
 
 Test: "It should return 0 if the number 0 is inputted."

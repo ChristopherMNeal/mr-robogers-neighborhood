@@ -1,7 +1,7 @@
 function makeNumberArray(input) {
   let numberArray = [];
   if (input === "") {
-    numberArray = -1;
+    numberArray.push(-1);
   } else {
     for (let i = 0; i <= input; i++) {
       numberArray.push(i);
