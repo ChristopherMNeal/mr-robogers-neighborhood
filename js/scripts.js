@@ -1,6 +1,6 @@
 function makeNumberArray(input) {
   let numberArray = [];
-  if (input === "") {
+  if (input === "" || input < 0) {
     numberArray.push(-1);
   } else {
     for (let i = 0; i <= input; i++) {
