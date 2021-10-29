@@ -20,6 +20,7 @@ _Mr. Roboger is a friendly AI television host. Enter a number and he will speak 
 
 * _Clone the repository from GitHub_
 * _Open the webpage in your preferred browser_
+* _The page is also available on my gh-pages [here](https://christophermneal.github.io/mr-robogers-neighborhood/)!_
 
 ## Known Bugs
 
@@ -30,3 +31,11 @@ _None_
 _[MIT](https://opensource.org/licenses/MIT)_
 
 Copyright (c) _29 October 2021_ _Christopher Neal_
+
+## Tests
+
+Describe: makeNumberString()
+
+Test: "It should return a string with a 0 if the number 0 is inputted"
+Code: makeNumberString(0);
+Expected Output: "0"
