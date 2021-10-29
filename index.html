@@ -10,19 +10,25 @@
 <body>
 <div class="container">
   <h1>Mr. Roboger's Neighborhood</h1>
-  <form id="name-form">
-    <label for="name" class="label">What's your name?</label>
-    <input id="name" class="form-control" type="text" placeholder="Your Name">
-    <button type="submit" class="btn btn-primary">Submit</button>
-    <p class="alert" id="no-name">Please input your name.</p>
-  </form>
-  <form id="number-form">
-    <label for="number" class="label">Pick a number up to 2000!</label>
-    <input id="number" class="form-control" type="number" placeholder="300">
-    <button type="submit" class="btn btn-primary">Submit</button>
-    <p class="alert" id="too-big">Your number is too big!</p>
-    <p class="alert" id="positive-integer">Please input a positive number!</p>
-  </form>
+  <div id="name-form">
+    <form>
+      <label for="name" class="label">What's your name?</label>
+      <input id="name" class="form-control" type="text" placeholder="Your Name">
+      <button type="submit" class="btn btn-primary">Submit</button>
+      <p class="alert" id="no-name">Please input your name.</p>
+    </form>
+    <img src="img/robot.webp" width="50%" alt="A cartoon robot">
+  </div>
+  <div id="number-form">
+    <form>
+      <label for="number" class="label">Pick a number up to 2000!</label>
+      <input id="number" class="form-control" type="number" placeholder="300">
+      <button type="submit" class="btn btn-primary">Submit</button>
+      <p class="alert" id="too-big">Your number is too big!</p>
+      <p class="alert" id="positive-integer">Please input a positive number!</p>
+    </form>
+    <img src="img/thinking.png" width="50%" alt="A thinking robot">
+  </div>
   <div id="results">
     <button type="reset" id="reset" class="btn btn-primary">Reset the page!</button>
     <p id="results-p"></p>

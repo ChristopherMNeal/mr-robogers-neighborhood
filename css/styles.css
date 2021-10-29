@@ -1,3 +1,26 @@
+body {
+  background-color: #1FC3CD;
+  color: #411271;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+h1 {
+  margin-top: 3%;
+  border: 2px dotted #F5C603;
+  padding: 10px 15px 10px 15px;
+  border-radius: 25px;
+  text-align: center;
+  width: fit-content;
+}
+
+button {
+  margin: 10px 0 10px 0;
+}
+
+form {
+  width: 50%;
+}
+
 #positive-integer {
   display: none;
 }

@@ -26,6 +26,12 @@ _Mr. Roboger is a friendly AI television host. Enter a number and he will speak 
 
 _None_
 
+## Future Improvements
+
+* _Use more appropriate loops rather than only for loops._
+* _DRY gradual font size decreasing function._
+* _Move font size decreasing function to UI section?_
+
 ## License
 
 _[MIT](https://opensource.org/licenses/MIT)_
