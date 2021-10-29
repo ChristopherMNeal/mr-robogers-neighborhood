@@ -38,11 +38,11 @@ Describe: makeNumberArray()
 
 Test: "It should return an array with a 0 if the number 0 is inputted."
 Code: makeNumberArray(0);
-Expected Output: [0]
+Expected Output: "[0]"
 
 Test: "It should return an array with numbers counting up from 0 to the number that is inputted."
 Code: makeNumberArray(5);
-Expected Output: [0, 1, 2, 3, 4, 5]
+Expected Output: "[0, 1, 2, 3, 4, 5]"
 
 Test: "It should return '-1' if an empty string is inputted."
 Code: makeNumberArray("");
@@ -51,6 +51,10 @@ Expected Output: "[-1]"
 Test: "It should return '-1' if a negative number is inputted"
 Code: makeNumberArray(-1);
 Expected Output: "[-1]"
+
+Test: "It should round to the nearest number if a decimal is inputted"
+Code: makeNumberArray(-1.6);
+Expected Output: "[0, 1, 2]"
 
 Describe: mrRobogerTranslator()
 
