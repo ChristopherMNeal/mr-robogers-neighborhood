@@ -48,7 +48,6 @@ Describe: mrRobogerTranslator()
 
 Test: "It should return 0 if the number 0 is inputted."
 Code: mrRobogerTranslator(0);
-<<<<<<< HEAD
 Expected Output: "0"
 
 Test: "It should return 'Beep!' if the number 1 is inputted."
@@ -67,6 +66,12 @@ Test: "It should return 'Beep!' if the number 11 is inputted."
 Code: mrRobogerTranslator(11); 
 Expected Output: "Beep!"
 
-=======
-Expected Output: 0
->>>>>>> 60b559a (Pass second test, mrRogoberTranslator() returns expected behavior)
+Test: "It should return the inputted number unless it is an exception; the importance of the exceptions should go from 3 (most important), 2, 1(least important)."
+Code: mrRobogerTranslator("3210");
+"Won't you be my neighbor?"
+Code: mrRobogerTranslator("210");
+Expected Output: 'Boop!'
+Code: mrRobogerTranslator("10");
+Expected Output: 'Beep!'
+Code: mrRobogerTranslator("0");
+Expected Output: '0'
