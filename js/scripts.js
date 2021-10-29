@@ -1,5 +1,7 @@
 function makeNumberArray(input) {
-  if(input === 0) {
-    return [0];
+  let numberArray = [];
+  for (let i = 0; i <= input; i++) {
+    numberArray.push(i);
   }
+  return numberArray;
 }
