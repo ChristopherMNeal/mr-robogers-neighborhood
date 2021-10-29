@@ -37,8 +37,25 @@ function mrRobogerTranslator(numberInput) {
 function mrRoboger(input) {
   let resultsArray = [];
   const numberArray = makeNumberArray(input);
-  for (let i = 0; i < numberArray.length; i++) {
+  let division = 0;
+  if (input >= 400) {
+    division = Math.floor(numberArray.length / 4);
+    for (let i = 0; i < division; i++) {
+      resultsArray.push("<div class='big'>" + mrRobogerTranslator(numberArray[i]) + "</div>");
+    }
+    for (let i = division; i < division*2; i++) {
+      resultsArray.push("<div class='reg'>" + mrRobogerTranslator(numberArray[i]) + "</div>");
+    }
+    for (let i = division*2; i < division*3; i++) {
+      resultsArray.push("<div class='small'>" + mrRobogerTranslator(numberArray[i]) + "</div>");
+    }
+    for (let i = division*3; i < numberArray.length; i++) {
+      resultsArray.push("<div class='smaller'>" + mrRobogerTranslator(numberArray[i]) + "</div>");
+    }
+  } else {
+    for (let i = 0; i < numberArray.length; i++) {
     resultsArray.push(mrRobogerTranslator(numberArray[i]));
+    }
   }
   return resultsArray.join(" ");
 }
@@ -66,7 +83,7 @@ $(document).ready(function() {
       $("#positive-integer").slideDown();
       $("#too-big").hide();
     } else {
-      $("#results-p").text(mrRoboger(number));
+      $("#results-p").html(mrRoboger(number));
       $("#number-form").slideToggle();
       $("#results").delay(800).slideToggle();
     }

@@ -17,3 +17,22 @@
 #no-name {
   display: none;
 }
+
+.big {
+  font-size: 1.5em;
+  display: inline;
+}
+
+.reg {
+  font-size: 1.1em;
+  display: inline;
+
+.small {
+  font-size: .8em;
+  display: inline;
+}
+
+.smaller {
+  font-size: .5em;
+  display: inline;
+}
