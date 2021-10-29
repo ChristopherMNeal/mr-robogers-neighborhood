@@ -1,10 +1,9 @@
 function makeNumberArray(input) {
   let numberArray = [];
-  roundInput = Math.round(input);
   if (input === "" || input < 0) {
     numberArray = "-1";
   } else {
-    for (let i = 0; i <= roundInput; i++) {
+    for (let i = 0; i <= input; i++) {
       numberArray.push(i);
     }
   }

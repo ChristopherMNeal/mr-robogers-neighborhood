@@ -55,6 +55,8 @@ Expected Output: "[-1]"
 Test: "It should round to the nearest number if a decimal is inputted"
 Code: makeNumberArray(-1.6);
 Expected Output: "[0, 1, 2]"
+Note: I realized this test is unnecessary because the number input form doesn't allow decimals. I have removed the rounding logic.
+
 
 Describe: mrRobogerTranslator()
 
@@ -91,7 +93,7 @@ Expected Output: "0"
 Test: "It should return "" if no number is inputted."
 Code: mrRobogerTranslator(); 
 Expected Output: ""
-Note: makeNumberArray test 3 makes this test no longer necessary.
+Note: makeNumberArray() test 3 makes this test obsolete.
 
 
 Describe: mrRoboger()
@@ -103,4 +105,4 @@ Expected Output: "0 Beep! Boop! Won't you be my neighbor? 4 5"
 Test: "It should return an empty string if no number is inputted"
 Code: mrRoboger();
 Expected Output: ""
-Note: makeNumberArray test 3 makes this test no longer necessary.
+Note: makeNumberArray() test 3 makes this test obsolete.

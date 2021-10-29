@@ -19,21 +19,29 @@
 }
 
 .big {
-  font-size: 1.4em;
+  font-size: 1.6em;
 }
 
 .reg {
-  font-size: 1.1em;
+  font-size: 1.3em;
 }
 
 .small {
-  font-size: .8em;
+  font-size: 1.0em;
 }
 
 .smaller {
-  font-size: .5em;
+  font-size: .7em;
 }
 
 .smallest {
-  font-size: .2em;
+  font-size: .4em;
+}
+
+.label {
+  font-size: 1.6em;
+}
+
+.alert {
+  font-style: italic;
 }
