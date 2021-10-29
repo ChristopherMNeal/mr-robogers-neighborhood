@@ -46,8 +46,9 @@ Expected Output: [0, 1, 2, 3, 4, 5]
 
 Describe: mrRobogerTranslator()
 
-Test: "It should return '0' if the number 0 is inputted."
+Test: "It should return 0 if the number 0 is inputted."
 Code: mrRobogerTranslator(0);
+<<<<<<< HEAD
 Expected Output: "0"
 
 Test: "It should return 'Beep!' if the number 1 is inputted."
@@ -66,3 +67,6 @@ Test: "It should return 'Beep!' if the number 11 is inputted."
 Code: mrRobogerTranslator(11); 
 Expected Output: "Beep!"
 
+=======
+Expected Output: 0
+>>>>>>> 60b559a (Pass second test, mrRogoberTranslator() returns expected behavior)
