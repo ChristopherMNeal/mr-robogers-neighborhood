@@ -7,13 +7,39 @@ function makeNumberArray(input) {
 }
 
 function mrRobogerTranslator(number) {
-  if (number === 1) {
-    return "Beep!";
-  } else if (number === 2) {
-    return "Boop!";
-  } else if (number === 3) {
-    return "Won't you be my neighbor?";
-  } else {
-    return number;
+  let n = number.toString();
+  const triggerArray = ["3", "2", "1"];
+  const triggerTranslation = ["Won't you be my neighbor?", "Boop!", "Beep!"];
+  let output = ""
+  for (let i = 0; i < triggerArray.length; i++) {
+    for (let j = 0; j < n.length; j++) {
+      if (triggerArray[i] === n[j]) {
+        output = triggerTranslation[i];
+        console.log(output);
+        break;
+      }
+    }
   }
+  if (!output) {
+    output = number;
+  }
+  return output;
 }
+
+// function mrRobogerTranslator(input) {
+//   const triggerArray = ["3", "2", "1"];
+//   const triggerTranslation = ["Won't you be my neighbor?", "Boop!", "Beep!"];
+//   let output = "";
+//   for (let i = 0; i < triggerArray.length; i++) {
+//     for (let j = 0; j < input.length; j++) {
+//       if (triggerArray[i] === input[j]) {
+//         output = triggerTranslation[i];
+//         break;
+//       }
+//     }
+//   }
+//   if (!output) {
+//     output = input;
+//   }
+//   return output;
+// }
