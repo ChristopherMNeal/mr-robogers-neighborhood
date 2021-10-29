@@ -42,12 +42,18 @@ $(document).ready(function() {
   $("#name-form").submit(function(event) {
     event.preventDefault();
     name = $("input#name").val();
-    
+    $("#name-form").slideToggle();
+    $("#number-form").delay(800).slideToggle();
   });
 
   $("#number-form").submit(function(event) {
     event.preventDefault();
     const number = $("input#number").val();
-    $("#results").html("Hi, " + name + "! " + "<br>" + mrRoboger(number));
+    $("#results-p").html("Hi, " + name + "! " + "<br>" + mrRoboger(number));
+    $("#number-form").slideToggle();
+    $("#results").delay(800).slideToggle();
+    $("#reset").click(function() {
+      location.reload();
+    });
   });
 });
