@@ -1,5 +1,5 @@
-function makeNumberString(input) {
+function makeNumberArray(input) {
   if(input === 0) {
-    return 0;
+    return [0];
   }
 }
