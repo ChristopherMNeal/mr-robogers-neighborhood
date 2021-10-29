@@ -63,7 +63,7 @@ Code: mrRobogerTranslator(3);
 Expected Output: "Won't you be my neighbor?"
 
 Test: "It should return 'Beep!' if the number 11 is inputted."
-Code: mrRobogerTranslator(11); 
+Code: mrRobogerTranslator("11"); 
 Expected Output: "Beep!"
 
 Test: "It should return the inputted number unless it is an exception; the importance of the exceptions should go from 3 (most important), 2, 1(least important)."
@@ -75,3 +75,7 @@ Code: mrRobogerTranslator("10");
 Expected Output: 'Beep!'
 Code: mrRobogerTranslator("0");
 Expected Output: '0'
+
+Test: "It should return "" if no number is inputted."
+Code: mrRobogerTranslator(); 
+Expected Output: ""
