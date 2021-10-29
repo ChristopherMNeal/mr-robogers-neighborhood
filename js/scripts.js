@@ -37,3 +37,17 @@ function mrRoboger(input) {
   return resultsArray.join(" ");
 }
 
+$(document).ready(function() {
+  let name = "";
+  $("#name-form").submit(function(event) {
+    event.preventDefault();
+    name = $("input#name").val();
+    
+  });
+
+  $("#number-form").submit(function(event) {
+    event.preventDefault();
+    const number = $("input#number").val();
+    $("#results").html("Hi, " + name + "! " + "<br>" + mrRoboger(number));
+  });
+});
