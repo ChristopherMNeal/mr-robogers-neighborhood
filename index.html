@@ -9,8 +9,18 @@
 </head>
 <body>
 <div class="container">
-<h1>Mr. Roboger's Neighborhood</h1>
-<!-- input number here -->
+  <h1>Mr. Roboger's Neighborhood</h1>
+  <form id="name-form">
+    <label for="name"><h4>What's your name?</h4></label>
+    <input id="name" class="form-control" type="text" placeholder="Your Name">
+    <button type="submit">Submit</button>
+  </form>
+  <form id="number-form">
+    <label for="number"><h4>Pick a number up to 2000!</h4></label>
+    <input id="number" class="form-control" type="number" placeholder="5">
+    <button type="submit">Submit</button>
+  </form>
+  <div id="results"></div>
 </div>
 </body>
 </html>
