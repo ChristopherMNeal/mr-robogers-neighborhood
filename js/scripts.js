@@ -43,7 +43,3 @@ function mrRobogerTranslator(number) {
 //   }
 //   return output;
 // }
-  if (number === 0) {
-    return 0;
-  }
-}
