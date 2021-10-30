@@ -37,7 +37,7 @@ function mrRoboger(input) {
   let resultsArray = [];
   const numberArray = makeNumberArray(input);
   let division = 0;
-  if (input >= 3) {
+  if (input > 3) {
     division = Math.floor(numberArray.length / 5);
     for (let i = 0; i < division; i++) {
       resultsArray.push("<span class='big'>" + mrRobogerTranslator(numberArray[i]) + "</span>");
